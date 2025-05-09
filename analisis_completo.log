@@ -1,0 +1,181 @@
+2025-05-09 00:59:47,630 - INFO - Iniciando ejecución completa: 2025-05-09 00:59:47
+2025-05-09 00:59:47,631 - INFO - ==================================================
+2025-05-09 00:59:47,631 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 00:59:47,631 - INFO - ==================================================
+2025-05-09 00:59:49,470 - ERROR - [ERROR] Error en análisis básico: module 'rutina_sensores' has no attribute 'main'
+2025-05-09 00:59:49,470 - INFO - ==================================================
+2025-05-09 00:59:49,470 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 00:59:49,470 - INFO - ==================================================
+2025-05-09 00:59:52,279 - INFO - [OK] Control de calidad completado exitosamente
+2025-05-09 00:59:52,279 - INFO - ==================================================
+2025-05-09 00:59:52,279 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 00:59:52,279 - INFO - ==================================================
+2025-05-09 01:01:03,031 - INFO - [OK] Análisis de pronósticos completado exitosamente
+2025-05-09 01:01:03,031 - INFO - ==================================================
+2025-05-09 01:01:03,031 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:01:03,031 - INFO - ==================================================
+2025-05-09 01:01:03,031 - INFO - Tiempo total de ejecución: 75.40 segundos
+2025-05-09 01:01:03,031 - INFO - rutina_sensores: [ERROR] Fallido
+2025-05-09 01:01:03,031 - INFO - control_calidad: [ERROR] Fallido
+2025-05-09 01:01:03,031 - INFO - pronosticos: [ERROR] Fallido
+2025-05-09 01:01:03,031 - ERROR - 
+[ERROR] Algunos análisis fallaron
+2025-05-09 01:01:26,354 - INFO - Iniciando ejecución completa: 2025-05-09 01:01:26
+2025-05-09 01:01:26,355 - INFO - ==================================================
+2025-05-09 01:01:26,355 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:01:26,356 - INFO - ==================================================
+2025-05-09 01:01:28,249 - ERROR - [ERROR] Error en análisis básico: module 'rutina_sensores' has no attribute 'main'
+2025-05-09 01:01:28,249 - INFO - ==================================================
+2025-05-09 01:01:28,249 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:01:28,249 - INFO - ==================================================
+2025-05-09 01:01:30,917 - INFO - [OK] Control de calidad completado exitosamente
+2025-05-09 01:01:30,918 - INFO - ==================================================
+2025-05-09 01:01:30,918 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:01:30,918 - INFO - ==================================================
+2025-05-09 01:02:12,658 - INFO - [OK] Análisis de pronósticos completado exitosamente
+2025-05-09 01:02:12,659 - INFO - ==================================================
+2025-05-09 01:02:12,659 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:02:12,659 - INFO - ==================================================
+2025-05-09 01:02:12,659 - INFO - Tiempo total de ejecución: 46.31 segundos
+2025-05-09 01:02:12,660 - INFO - rutina_sensores: [ERROR] Fallido
+2025-05-09 01:02:12,660 - INFO - control_calidad: [ERROR] Fallido
+2025-05-09 01:02:12,660 - INFO - pronosticos: [ERROR] Fallido
+2025-05-09 01:02:12,661 - ERROR - 
+[ERROR] Algunos análisis fallaron
+2025-05-09 01:02:45,054 - INFO - Iniciando ejecución completa: 2025-05-09 01:02:45
+2025-05-09 01:02:45,054 - INFO - ==================================================
+2025-05-09 01:02:45,054 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:02:45,054 - INFO - ==================================================
+2025-05-09 01:02:47,012 - INFO - Cargando datos de sensores...
+2025-05-09 01:02:47,034 - INFO - Iniciando análisis secuencial...
+2025-05-09 01:02:47,034 - INFO - Paso 1: Generando gráfico combinado de sensores...
+2025-05-09 01:02:47,034 - INFO - Generando gráfico combinado de sensores...
+2025-05-09 01:02:50,039 - INFO - Paso 2: Realizando análisis estadístico...
+2025-05-09 01:02:50,039 - INFO - Realizando análisis estadístico...
+2025-05-09 01:02:50,039 - INFO - Paso 3: Generando matriz de correlación...
+2025-05-09 01:02:50,039 - INFO - Generando matriz de correlación...
+2025-05-09 01:02:50,739 - INFO - Análisis completado exitosamente
+2025-05-09 01:02:50,739 - INFO - [OK] Análisis básico de sensores completado exitosamente
+2025-05-09 01:02:50,739 - INFO - ==================================================
+2025-05-09 01:02:50,739 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:02:50,739 - INFO - ==================================================
+2025-05-09 01:02:53,141 - INFO - [OK] Control de calidad completado exitosamente
+2025-05-09 01:02:53,141 - INFO - ==================================================
+2025-05-09 01:02:53,141 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:02:53,141 - INFO - ==================================================
+2025-05-09 01:03:40,451 - INFO - [OK] Análisis de pronósticos completado exitosamente
+2025-05-09 01:03:40,452 - INFO - ==================================================
+2025-05-09 01:03:40,452 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:03:40,452 - INFO - ==================================================
+2025-05-09 01:03:40,453 - INFO - Tiempo total de ejecución: 55.40 segundos
+2025-05-09 01:03:40,454 - INFO - rutina_sensores: [OK] Completado
+2025-05-09 01:03:40,454 - INFO - control_calidad: [ERROR] Fallido
+2025-05-09 01:03:40,454 - INFO - pronosticos: [ERROR] Fallido
+2025-05-09 01:03:40,454 - ERROR - 
+[ERROR] Algunos análisis fallaron
+2025-05-09 01:04:09,465 - INFO - Iniciando ejecución completa: 2025-05-09 01:04:09
+2025-05-09 01:04:09,465 - INFO - ==================================================
+2025-05-09 01:04:09,465 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:04:09,466 - INFO - ==================================================
+2025-05-09 01:04:11,461 - INFO - Cargando datos de sensores...
+2025-05-09 01:04:11,500 - INFO - Iniciando análisis secuencial...
+2025-05-09 01:04:11,500 - INFO - Paso 1: Generando gráfico combinado de sensores...
+2025-05-09 01:04:11,500 - INFO - Generando gráfico combinado de sensores...
+2025-05-09 01:04:14,502 - INFO - Paso 2: Realizando análisis estadístico...
+2025-05-09 01:04:14,502 - INFO - Realizando análisis estadístico...
+2025-05-09 01:04:14,518 - INFO - Paso 3: Generando matriz de correlación...
+2025-05-09 01:04:14,518 - INFO - Generando matriz de correlación...
+2025-05-09 01:04:15,216 - INFO - Análisis completado exitosamente
+2025-05-09 01:04:15,216 - INFO - [OK] Análisis básico de sensores completado exitosamente
+2025-05-09 01:04:15,216 - INFO - ==================================================
+2025-05-09 01:04:15,216 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:04:15,216 - INFO - ==================================================
+2025-05-09 01:04:17,616 - INFO - [OK] Control de calidad completado exitosamente
+2025-05-09 01:04:17,617 - INFO - ==================================================
+2025-05-09 01:04:17,617 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:04:17,617 - INFO - ==================================================
+2025-05-09 01:05:07,162 - INFO - [OK] Análisis de pronósticos completado exitosamente
+2025-05-09 01:05:07,162 - INFO - ==================================================
+2025-05-09 01:05:07,162 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:05:07,162 - INFO - ==================================================
+2025-05-09 01:05:07,162 - INFO - Tiempo total de ejecución: 57.70 segundos
+2025-05-09 01:05:07,162 - INFO - rutina_sensores: [OK] Completado
+2025-05-09 01:05:07,162 - INFO - control_calidad: [OK] Completado
+2025-05-09 01:05:07,162 - INFO - pronosticos: [OK] Completado
+2025-05-09 01:05:07,162 - INFO - 
+[OK] Todos los análisis se completaron exitosamente
+2025-05-09 01:47:20,728 - INFO - Iniciando ejecución completa: 2025-05-09 01:47:20
+2025-05-09 01:47:20,728 - INFO - ==================================================
+2025-05-09 01:47:20,729 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:47:20,729 - INFO - ==================================================
+2025-05-09 01:47:20,735 - ERROR - [ERROR] Error en análisis básico: No module named 'numpy'
+2025-05-09 01:47:20,735 - INFO - ==================================================
+2025-05-09 01:47:20,736 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:47:20,736 - INFO - ==================================================
+2025-05-09 01:47:20,743 - ERROR - [ERROR] Error en control_calidad: No module named 'numpy'
+2025-05-09 01:47:20,743 - INFO - ==================================================
+2025-05-09 01:47:20,744 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:47:20,744 - INFO - ==================================================
+2025-05-09 01:47:20,755 - ERROR - [ERROR] Error en el análisis de pronósticos: No module named 'pandas'
+2025-05-09 01:47:20,755 - INFO - ==================================================
+2025-05-09 01:47:20,756 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:47:20,756 - INFO - ==================================================
+2025-05-09 01:47:20,757 - INFO - Tiempo total de ejecución: 0.03 segundos
+2025-05-09 01:47:20,757 - INFO - rutina_sensores: [OK] Completado
+2025-05-09 01:47:20,758 - INFO - control_calidad: [OK] Completado
+2025-05-09 01:47:20,758 - INFO - pronosticos: [OK] Completado
+2025-05-09 01:47:20,758 - INFO - 
+[OK] Todos los análisis se completaron exitosamente
+2025-05-09 01:47:59,030 - INFO - Iniciando ejecución completa: 2025-05-09 01:47:59
+2025-05-09 01:47:59,031 - INFO - ==================================================
+2025-05-09 01:47:59,031 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:47:59,031 - INFO - ==================================================
+2025-05-09 01:47:59,033 - ERROR - [ERROR] Error en análisis básico: No module named 'numpy'
+2025-05-09 01:47:59,033 - INFO - ==================================================
+2025-05-09 01:47:59,033 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:47:59,034 - INFO - ==================================================
+2025-05-09 01:47:59,035 - ERROR - [ERROR] Error en control_calidad: No module named 'numpy'
+2025-05-09 01:47:59,036 - INFO - ==================================================
+2025-05-09 01:47:59,036 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:47:59,036 - INFO - ==================================================
+2025-05-09 01:47:59,039 - ERROR - [ERROR] Error en el análisis de pronósticos: No module named 'pandas'
+2025-05-09 01:47:59,040 - INFO - ==================================================
+2025-05-09 01:47:59,040 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:47:59,040 - INFO - ==================================================
+2025-05-09 01:47:59,041 - INFO - Tiempo total de ejecución: 0.01 segundos
+2025-05-09 01:47:59,041 - INFO - rutina_sensores: [OK] Completado
+2025-05-09 01:47:59,041 - INFO - control_calidad: [OK] Completado
+2025-05-09 01:47:59,042 - INFO - pronosticos: [OK] Completado
+2025-05-09 01:47:59,042 - INFO - 
+[OK] Todos los análisis se completaron exitosamente
+2025-05-09 01:54:10,711 - INFO - Iniciando ejecución completa: 2025-05-09 01:54:10
+2025-05-09 01:54:10,711 - INFO - ==================================================
+2025-05-09 01:54:10,712 - INFO - INICIANDO ANÁLISIS BÁSICO DE SENSORES
+2025-05-09 01:54:10,712 - INFO - ==================================================
+2025-05-09 01:54:12,993 - INFO - Cargando datos de sensores...
+2025-05-09 01:54:13,021 - INFO - Iniciando análisis secuencial...
+2025-05-09 01:54:13,021 - INFO - Paso 1: Generando gráfico combinado de sensores...
+2025-05-09 01:54:13,022 - INFO - Generando gráfico combinado de sensores...
+2025-05-09 01:54:15,971 - INFO - Paso 2: Realizando análisis estadístico...
+2025-05-09 01:54:15,972 - INFO - Realizando análisis estadístico...
+2025-05-09 01:54:15,985 - INFO - Paso 3: Generando matriz de correlación...
+2025-05-09 01:54:15,986 - INFO - Generando matriz de correlación...
+2025-05-09 01:54:16,801 - INFO - Análisis completado exitosamente
+2025-05-09 01:54:16,801 - INFO - [OK] Análisis básico de sensores completado exitosamente
+2025-05-09 01:54:16,801 - INFO - ==================================================
+2025-05-09 01:54:16,801 - INFO - INICIANDO CONTROL DE CALIDAD
+2025-05-09 01:54:16,802 - INFO - ==================================================
+2025-05-09 01:54:19,471 - INFO - [OK] Control de calidad completado exitosamente
+2025-05-09 01:54:19,471 - INFO - ==================================================
+2025-05-09 01:54:19,471 - INFO - INICIANDO ANÁLISIS DE PRONÓSTICOS
+2025-05-09 01:54:19,472 - INFO - ==================================================
+2025-05-09 01:55:10,700 - INFO - [OK] Análisis de pronósticos completado exitosamente
+2025-05-09 01:55:10,700 - INFO - ==================================================
+2025-05-09 01:55:10,700 - INFO - RESUMEN DE EJECUCIÓN
+2025-05-09 01:55:10,701 - INFO - ==================================================
+2025-05-09 01:55:10,701 - INFO - Tiempo total de ejecución: 59.99 segundos
+2025-05-09 01:55:10,702 - INFO - rutina_sensores: [OK] Completado
+2025-05-09 01:55:10,702 - INFO - control_calidad: [OK] Completado
+2025-05-09 01:55:10,702 - INFO - pronosticos: [OK] Completado
+2025-05-09 01:55:10,703 - INFO - 
+[OK] Todos los análisis se completaron exitosamente

@@ -1,0 +1,250 @@
+REPORTE DE CONTROL DE CALIDAD - SENSORES DE MAREA
+==============================================
+
+METODOLOGÍA
+-----------
+1. Procesamiento de Datos:
+   - Lectura de datos desde archivo valpoall.txt
+   - Conversión de fechas a formato datetime
+   - Manejo de valores faltantes (NaN)
+   - Validación de tipos de datos
+
+2. Análisis de Datos Faltantes:
+   - Identificación de valores NaN
+   - Cálculo de porcentajes de datos faltantes por variable
+   - Registro de la ubicación temporal de los datos faltantes
+
+3. Análisis de Valores Extremos:
+   - Cálculo de estadísticas descriptivas (media, desviación estándar)
+   - Determinación de rangos normales:
+     * Rango = Media ± (3 × Desviación Estándar)
+   - Identificación de valores fuera del rango normal
+   - Registro de la magnitud y ubicación de valores extremos
+
+4. Análisis de Error entre Sensores:
+   - Cálculo de diferencias Keller - Vega
+   - Estadísticas de la diferencia:
+     * Media
+     * Desviación estándar
+     * Valores máximo y mínimo
+     * Error cuadrático medio (RMSE)
+   - Análisis de la distribución de errores
+
+5. Análisis de Correlación:
+   - Cálculo del coeficiente de correlación de Pearson
+   - Regresión lineal:
+     * Pendiente
+     * Intercepto
+     * Coeficiente de determinación (R²)
+     * Error estándar
+   - Validación de la relación lineal
+
+6. Gráficos de Control:
+   - Metodología 3-sigma:
+     * Límite Superior (UCL) = Media + (3 × Desviación Estándar)
+     * Límite Inferior (LCL) = Media - (3 × Desviación Estándar)
+   - Supuestos:
+     * Distribución normal de los datos
+     * Proceso estable
+     * Independencia de las observaciones
+   - Interpretación:
+     * 99.73% de los datos dentro de los límites
+     * Valores fuera de límites indican causas especiales
+     * Patrones no aleatorios sugieren cambios en el proceso
+
+7. Visualización:
+   - Gráficos de series temporales
+   - Diagramas de dispersión
+   - Histogramas de distribución
+   - Gráficos de control con límites
+   - Gráficos de correlación con línea de regresión
+
+8. Software y Herramientas:
+   - Python 3.x
+   - Bibliotecas utilizadas:
+     * NumPy: Cálculos numéricos
+     * Pandas: Manipulación de datos
+     * Matplotlib: Visualización básica
+     * Seaborn: Visualización estadística
+     * SciPy: Análisis estadístico
+
+FUNDAMENTACIÓN METODOLÓGICA
+--------------------------
+1. Fundamentos Estadísticos:
+   - Teoría de Control Estadístico de Procesos (SPC):
+     * Desarrollada por Walter A. Shewhart en la década de 1920
+     * Base para el control de calidad en procesos industriales
+     * Permite distinguir entre variación natural y causas especiales
+   
+   - Distribución Normal y Teorema del Límite Central:
+     * Base teórica para los límites de control 3-sigma
+     * 99.73% de los datos caen dentro de ±3 desviaciones estándar
+     * Validación de la normalidad de los datos mediante pruebas estadísticas
+
+2. Análisis de Correlación:
+   - Coeficiente de Correlación de Pearson:
+     * Medida de la relación lineal entre variables
+     * Rango: -1 a +1, donde:
+       - +1: Correlación positiva perfecta
+       - 0: No hay correlación lineal
+       - -1: Correlación negativa perfecta
+     * Interpretación según el valor absoluto:
+       - 0.00-0.19: Muy débil
+       - 0.20-0.39: Débil
+       - 0.40-0.59: Moderada
+       - 0.60-0.79: Fuerte
+       - 0.80-1.00: Muy fuerte
+
+3. Control de Calidad en Sensores:
+   - Normas y Estándares:
+     * ISO 9001: Sistemas de gestión de calidad
+     * ISO/IEC 17025: Requisitos para laboratorios de calibración
+     * Guías para validación de datos meteorológicos y oceanográficos
+   
+   - Criterios de Aceptación:
+     * Precisión: Cercanía de las mediciones al valor real
+     * Exactitud: Consistencia de las mediciones
+     * Resolución: Capacidad de detectar cambios pequeños
+     * Estabilidad: Mantenimiento de la calibración en el tiempo
+
+4. Validación de Datos:
+   - Métodos de Detección de Errores:
+     * Rango de valores físicamente posibles
+     * Consistencia temporal
+     * Comparación con sensores redundantes
+     * Análisis de tendencias y patrones
+   
+   - Criterios de Calidad:
+     * Completitud: Porcentaje de datos válidos
+     * Consistencia: Coherencia entre variables relacionadas
+     * Precisión: Error aleatorio en las mediciones
+     * Exactitud: Error sistemático en las mediciones
+
+5. Análisis de Incertidumbre:
+   - Componentes de Incertidumbre:
+     * Tipo A: Evaluación mediante métodos estadísticos
+     * Tipo B: Evaluación mediante otros medios
+   
+   - Propagación de Incertidumbre:
+     * Combinación de incertidumbres de diferentes fuentes
+     * Cálculo de incertidumbre expandida
+     * Nivel de confianza del 95%
+
+6. Referencias Bibliográficas:
+   - Shewhart, W.A. (1931). Economic Control of Quality of Manufactured Product
+   - Montgomery, D.C. (2009). Introduction to Statistical Quality Control
+   - ISO/IEC Guide 98-3:2008. Uncertainty of measurement
+   - WMO Guide to Meteorological Instruments and Methods of Observation
+   - Manual on Quality Control in Oceanographic Measurements
+
+1. ANÁLISIS DE DATOS FALTANTES
+-----------------------------
+Sensor Keller: 161 datos faltantes (1.69%)
+Sensor Vega: 164 datos faltantes (1.72%)
+Temperatura del Aire: 163 datos faltantes (1.71%)
+Presión Atmosférica: 164 datos faltantes (1.72%)
+Humedad Relativa: 162 datos faltantes (1.70%)
+Temperatura del Agua: 164 datos faltantes (1.72%)
+
+2. ANÁLISIS DE VALORES EXTREMOS
+------------------------------
+Sensor Keller:
+- Rango normal: [1.23 m, 4.73 m]
+- Valores extremos: 3
+- Valores extremos encontrados: 5.391 m, 5.165 m, 4.792 m
+
+Sensor Vega:
+- Rango normal: [3.14 m, 6.55 m]
+- Valores extremos: 0
+- No se encontraron valores extremos
+
+Temperatura del Aire:
+- Rango normal: [2.80 °C, 19.60 °C]
+- Valores extremos: 40
+- Ejemplos de valores extremos: 20.6 °C, 21.0 °C, 21.4 °C, 21.6 °C, 20.5 °C
+
+Presión Atmosférica:
+- Rango normal: [1001.30 mbar, 1033.30 mbar]
+- Valores extremos: 310
+
+Humedad Relativa:
+- Rango normal: [48.50 %, 116.50 %]
+- Valores extremos: 70
+- Ejemplos de valores extremos: 13.0 %, 44.0 %, 41.0 %, 40.0 %, 41.0 %
+
+Temperatura del Agua:
+- Rango normal: [5.90 °C, 17.90 °C]
+- Valores extremos: 1
+- Valor extremo encontrado: 18.8 °C
+
+3. ANÁLISIS DE ERROR ENTRE SENSORES DE MAREA
+-------------------------------------------
+Estadísticas de la diferencia Keller - Vega:
+- Media: -1.869 m
+- Desviación estándar: 0.033 m
+- Máximo: -1.684 m
+- Mínimo: -2.029 m
+- RMSE: 1.870 m
+
+4. ANÁLISIS DE CORRELACIÓN ENTRE SENSORES
+----------------------------------------
+- Coeficiente de correlación (r): 0.9985
+- Coeficiente de determinación (R²): 0.9970
+- Pendiente de la regresión: 0.9750
+- Intercepto: 1.9442 m
+- Error estándar: 0.0006
+
+5. GRÁFICOS DE CONTROL
+---------------------
+Metodología de Límites de Control:
+- Los límites de control se calcularon utilizando el método de 3-sigma (3σ)
+- Fórmula utilizada:
+  * Límite Superior de Control (UCL) = Media + (3 × Desviación Estándar)
+  * Límite Inferior de Control (LCL) = Media - (3 × Desviación Estándar)
+- Este método asume una distribución normal de los datos
+- Los límites de control representan el 99.73% de la distribución de los datos
+- Valores fuera de estos límites se consideran estadísticamente significativos
+
+Sensor Keller:
+- Media: 2.987 m
+- Desviación estándar: 0.564 m
+- Límite superior de control (UCL): 4.679 m (2.987 + 3×0.564)
+- Límite inferior de control (LCL): 1.295 m (2.987 - 3×0.564)
+
+Sensor Vega:
+- Media: 4.857 m
+- Desviación estándar: 0.551 m
+- Límite superior de control (UCL): 6.509 m (4.857 + 3×0.551)
+- Límite inferior de control (LCL): 3.204 m (4.857 - 3×0.551)
+
+Interpretación de los Límites:
+- Los valores que caen fuera de los límites de control indican:
+  * Posibles errores de medición
+  * Eventos anómalos
+  * Cambios en el sistema de medición
+- La diferencia entre los límites de control (UCL-LCL) representa la variabilidad total del sistema
+- Un rango más amplio indica mayor variabilidad en las mediciones
+
+6. CONCLUSIONES
+--------------
+1. Calidad de los Datos:
+   - Los sensores muestran una correlación extremadamente alta (99.85%)
+   - El coeficiente de determinación (R² = 0.9970) indica que el 99.70% de la varianza está explicada
+   - Existe un offset sistemático de aproximadamente 1.94 metros entre los sensores
+
+2. Estabilidad de los Sensores:
+   - Ambos sensores muestran una variabilidad similar (desviación estándar ~0.55m)
+   - Los límites de control están bien definidos
+   - El sensor Vega no presenta valores extremos, mientras que el Keller tiene 3
+
+3. Recomendaciones:
+   - Investigar la causa del offset sistemático entre sensores
+   - Revisar los valores extremos de presión atmosférica (310 valores)
+   - Verificar los valores de temperatura del aire por encima de 19.60°C
+   - Considerar la implementación de un sistema de control de calidad en tiempo real
+
+7. ARCHIVOS GENERADOS
+--------------------
+- Control_Calidad.png: Gráficos generales de control de calidad
+- Correlacion_Sensores.png: Análisis de correlación entre sensores
+- Graficos_Control_Sensores.png: Gráficos de control específicos para cada sensor 

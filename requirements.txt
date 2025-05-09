@@ -1,0 +1,11 @@
+Django==5.2.1
+djangorestframework==3.16.0
+pandas==2.2.3
+scikit-learn==1.6.1
+joblib==1.4.2
+numpy==1.26.4
+matplotlib>=3.4.0
+scipy>=1.7.0
+seaborn>=0.11.0
+utide>=0.2.3
+python-dateutil>=2.8.2 

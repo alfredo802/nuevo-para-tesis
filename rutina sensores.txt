@@ -1,0 +1,127 @@
+close all
+clear all
+clc
+
+D=load('ancudall.txt');
+aa=D(:,1);
+mm=D(:,2);
+dd=D(:,3);
+hh=D(:,4);
+prs=D(:,5);% sensor keller
+rad=D(:,6);% sensor vega
+ta=D(:,7);% temperatura del aire
+bp=D(:,8);% presion atmosferica
+rh=D(:,9);% humedad relativa
+tw=D(:,10);% temperatura del agua
+
+prsnm=nanmean(prs);
+radnm=nanmean(rad);
+A=(prs-prsnm);
+B=(rad-radnm);
+
+nombre1='Ancud';
+tiempo=datenum(aa,mm,dd,hh,0,0);
+
+%%
+h1=figure ('color','w','position',[1 41 1366 652]);
+subplot(321)
+plot(tiempo,prs);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+ylabel('Altura (m)')
+title('Sensor Keller')
+text(738060,5.5,nombre1,'fontweight','bold','fontsize',18)
+hold on
+
+subplot(322)
+plot(tiempo,rad);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+ylabel('Altura (m)')
+title('Sensor Vega')
+
+
+subplot(323)
+plot(tiempo,ta);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+ylabel('Temperatura (°C)')
+title('Sensor de Temperatura Aire')
+
+
+subplot(324)
+plot(tiempo,bp);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+ylim([990 1040])
+ylabel('Presión Atmosférica (mbar)')
+title('Sensor Presión Atmosférica')
+
+
+subplot(325)
+plot(tiempo,rh);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlabel('Tiempo')
+xlim([tiempo(1) tiempo(end)])
+ylabel('%')
+title('Sensor Humedad Relativa')
+
+
+subplot(326)
+plot(tiempo,tw);
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlabel('Tiempo')
+xlim([tiempo(1) tiempo(end)])
+ylabel('Temperatura (°C)')
+title('Sensor de Temperatura Agua')
+
+saveas (h1, 'Todos los Sensores.png');
+
+
+%%
+h2=figure ('color','w','position',[1 41 1366 652]);
+
+subplot(311)
+plot(tiempo,prs); hold on
+plot(tiempo,rad)
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+ylabel('Altura (m)')
+legend('Keller','Vega','Orientation','horizontal')
+title('Sensores de Marea Ancud')
+subplot(312)
+[hAx,hLine1,hLine2] = plotyy(tiempo,(prs-prsnm),tiempo,bp); hold on
+set(hLine2,'color','g')
+xlim(hAx(1),[tiempo(1) tiempo(end)])
+xlim(hAx(2),[tiempo(1) tiempo(end)])
+
+plot(tiempo,(rad-radnm))
+ylabel(hAx(1),'Altura (m)') % left y-axis 
+ylabel(hAx(2),'Presión Atmosférica (mbar)') % right y-axis
+datetick('x', 'dd/mm/yy', 'keepticks');
+legend('Keller','Vega', 'Presón Atmosférica','Orientation','horizontal','location','southeast');
+
+
+subplot(313)
+plot(tiempo,((rad-radnm)-(prs-prsnm))); hold on
+line([tiempo(1) tiempo(end)], [0 0],'color','r','linewidth',1.5)
+datetick('x', 'dd/mm/yy', 'keepticks');
+xlim([tiempo(1) tiempo(end)])
+xlabel('Tiempo')
+ylabel('Altura (m)')
+
+saveas (h2, 'Marea y Presión Atmosférica.png');
+
+%%
+h3=figure ('color','w','position',[1 41 1366 652]);
+subplot(312)
+plot(tiempo,ta); hold on
+plot(tiempo,tw)
+datetick('x', 'dd/mm/yy', 'keepticks');
+legend('Temperatura del Aire','Temperatura del Agua')
+xlim([tiempo(1) tiempo(end)])
+ylabel('Temperatura (C°)')
+xlabel('Tiempo')
+title('Sensores de Temperatura Ancud')
+text(737510,35,nombre1,'fontweight','bold','fontsize',18)
+saveas (h3, 'Sensores de Temperatura.png');
